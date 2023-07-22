@@ -19,7 +19,7 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
   }
 
   let show ='';
-  if(desc[projectName + 'Github']==""){
+  if(desc[projectName + 'Github']===""){
     show="none";
   }
     

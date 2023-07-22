@@ -7,6 +7,8 @@
 #root{
   min-height: 100vh;
   position: relative;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .loader{
@@ -21,7 +23,6 @@ body{
   background-color: #031926;
   color: #E7E7E7;
   min-height: 100vh;
-  overflow-x: hidden;  
 }
 
 b{
@@ -66,41 +67,41 @@ b{
 /* NAVBAR */
 
 .Navbar{
-  backdrop-filter: blur( 15px );
-  -webkit-backdrop-filter: blur( 20px );
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   
-  position: sticky;
+  position: fixed;
+  width: 100%;
   z-index: 2;
 
   height: 70px;
-  padding: 0 7%;
   top: 0;
-  transition: all 1s linear;
+  transition: all 0.7s;
 }
 
 .blur{
   background-color:#01111a8d;
-  transition: all 1s;
+  backdrop-filter: blur( 15px );
+  -webkit-backdrop-filter: blur( 20px );
 }
 
 .Logo{
   font-size: 32px;
   letter-spacing: 2px;
+  padding-left: 7%;
   color: #9067C6;
   display: flex;
   align-items: center;
   text-align: center;
-  cursor:default;
+  cursor:pointer;
 }
 
 .NavbarLinks{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 7%;
   font-weight: 500;
   font-size: 22px;
 }
@@ -117,7 +118,7 @@ b{
   justify-content: space-between;
   position: relative;
   width: 95%;
-  padding: 2px 5px;
+  padding: 2px 7px;
   letter-spacing: 0.5px;
   text-decoration: none;
 }
@@ -130,14 +131,14 @@ b{
   content: "";
   position: absolute;
   height: 3px;
-  left: 0px;
+  left: 5px;
   bottom: 0;
   width: 0px;
   border-radius: 2px;
   transition: 0.3s;
 }
 .NavbarLinks a:hover:after{
-  width: 100%;
+  width: 95%;
 }
 .Hamburger{
   display: none;
@@ -145,12 +146,11 @@ b{
 
 @media(max-width:800px){
   .Navbar{
-    width: 80%;
-    padding: 0 10%;
+    width: 100%;
   }
 
   .NavbarLinks{
-    font-size: 24px;
+    font-size: 26px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -160,7 +160,7 @@ b{
     background-color:#431f47;
     height: 100vh;
     padding-top: max(20%,120px);
-    transform: translateX(150%);
+    transform: translateX(100%);
     transition: 0.5s;
   }
 
@@ -172,22 +172,23 @@ b{
     display: block;
     z-index: 2;
     padding: 5px;
+    padding-right: 7%;
     cursor: pointer;
   }
 
   .bar{
     display: block;
     background-color: #E7E7E7;
-    border-radius: 15px;
-    height: 2px;
-    width: 25px;
-    margin: 5px;
+    border-radius: 50px;
+    height: 2.5px;
+    width: 30px;
+    margin: 6px;
     transition: 0.5s;
   }
   .barOne{
-    rotate: -45deg;
+    rotate: -225deg;
     position: relative;
-    top: 3.5px;
+    top: 4px;
     transition: 0.5s ;
   }
   .barTwo{
@@ -195,8 +196,8 @@ b{
   }
   .barThree{
     position: relative;
-    bottom: 3.5px;
-    rotate: 45deg;
+    bottom: 4px;
+    rotate: 225deg;
     transition: 0.5s;
   }
   
@@ -209,6 +210,7 @@ b{
   display: flex;
   justify-content: space-evenly;
   min-height: 80vh;
+  margin-top: 100px;
   align-items: center;
 }
 .HomeText h1{
@@ -230,11 +232,11 @@ b{
   height: 400px;
 }
 
-@media(max-width:800px){
+@media(max-width:900px){
   .HomePage{
     display: block;
     text-align: center;
-    margin-top: 75px;
+    margin-top: 175px;
     padding: 25px;
   }
   .HomeText{
@@ -252,7 +254,7 @@ b{
     min-height: 70vh;
   }
   .NavbarLinks{
-    inset: 0 0 0 40%;
+    inset: 0 0 0 30%;
   }
   .HomeText h1{
     font-weight: 500;
@@ -275,6 +277,7 @@ b{
 .AboutPage{
   display: flex;
   justify-content: space-evenly;
+  margin-top: 100px;
   min-height: 80vh;
   align-items: center;
   padding: 25px;
@@ -290,7 +293,7 @@ b{
 .AboutTextHeading{
   font-size: 35px;
   font-weight: 600;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
 }
 .AboutText a{
   color: #9067C6;
@@ -306,7 +309,7 @@ b{
   .AboutPage{
     display: block;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 150px;
     padding: 30px;    
   }
   .AboutText{
@@ -323,7 +326,7 @@ b{
 
   .Avatar{
     width: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
   }
 }
 
@@ -386,6 +389,7 @@ b{
   padding: 75px 0;
   letter-spacing: 0.4px;
   font-size: 36px;
+  margin-top: 100px;
 }
 
 .project{
@@ -442,7 +446,7 @@ b{
   padding-top: 50px;
   width: fit-content;
   position: relative;
-  margin: 0px auto;
+  margin: 100px auto 0px;
   text-align: center;
 }
 
@@ -506,7 +510,7 @@ footer h4{
   color: inherit;
 }
 
-@media(max-width:700px){
+@media(max-width:750px){
   footer{
     height: 110px;
   }
