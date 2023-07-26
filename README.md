@@ -41,7 +41,7 @@
 <ol>
   <li>Fork this repo from the fork option on top of my GitHub repo.</li>
   <li>After completing the fork, move to the copied repo in your account and copy the HTTPS link from the code option.</li>
-  <li>Now in the terminal of your system(in vs code or any third party terminal) cd over to the location where you want to store this project & write, git clone copied link</li>
+  <li>Now in the terminal of your system(in vs code or any third party terminal) cd over to the location where you want to store this project & write, `git clone copied link`</li>
   <li>This would create a copy in your local system and link it to the forked repo.</li>
   <li>Now open this project in your desirable IDE and in the terminal write npm i, this would install all the necessary npm packages.</li>
   <li>You can write npm start in the terminal to open the project in development mode. Open http://localhost:3000 to view in the browser. This page should reload when you make any changes.</li>
