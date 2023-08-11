@@ -236,7 +236,8 @@ b{
   .HomePage{
     display: block;
     text-align: center;
-    margin-top: 175px;
+    margin-top: 150px;
+    margin-bottom: 50px;
     padding: 25px;
   }
   .HomeText{
@@ -277,7 +278,6 @@ b{
 .AboutPage{
   display: flex;
   justify-content: space-evenly;
-  margin-top: 100px;
   min-height: 80vh;
   align-items: center;
   padding: 25px;
@@ -309,7 +309,6 @@ b{
   .AboutPage{
     display: block;
     text-align: center;
-    margin-top: 150px;
     padding: 30px;    
   }
   .AboutText{
