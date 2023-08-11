@@ -211,6 +211,7 @@ b{
   justify-content: space-evenly;
   min-height: 80vh;
   margin-top: 100px;
+  margin-bottom: -50px;
   align-items: center;
 }
 .HomeText h1{
@@ -237,7 +238,6 @@ b{
     display: block;
     text-align: center;
     margin-top: 150px;
-    margin-bottom: 50px;
     padding: 25px;
   }
   .HomeText{
@@ -279,6 +279,7 @@ b{
   display: flex;
   justify-content: space-evenly;
   min-height: 80vh;
+  margin-top: 100px;
   align-items: center;
   padding: 25px;
 }
