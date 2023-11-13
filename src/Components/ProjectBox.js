@@ -15,7 +15,11 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
 
     NewsletterDesc:"A newsletter signup site made using Mailchimp API where the signups can be monitored from the MailChimp account. This project was made to understand API integration, environment variables and vercel deployment.",
     NewsletterGithub:"",
-    NewsletterWebsite:"https://newsletter-signup-teal.vercel.app/"
+    NewsletterWebsite:"https://newsletter-signup-teal.vercel.app/",
+    
+    WigglesDesc:"An innovative pet management web app enabling pet parents to create unique pet IDs, securely store and share vaccination records, and generate QR codes for pet profiles, enhancing safety.",
+    WigglesGithub:"https://github.com/DevanshSahni/Wiggles",
+    WigglesWebsite:"https://wiggles.vercel.app/",
   }
 
   let show ='';

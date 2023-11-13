@@ -43,7 +43,7 @@ const About = () => {
         <Skills skill='Github' />
         <Skills skill='Javascript' />
         <Skills skill='C++' />
-        <Skills skill='Python' />
+        <Skills skill='Postman' />
         <Skills skill='Figma' />
         <Skills skill='Vercel' />
         <Skills skill='Npm' />
