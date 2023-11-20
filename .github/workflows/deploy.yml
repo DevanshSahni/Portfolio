@@ -15,6 +15,8 @@ jobs:
 
       - name: Build React App
         run: npm install && npm run build
+        env:
+          CI: false
 
       - name: Deploy to Desklab
         run: |
