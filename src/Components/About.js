@@ -11,30 +11,31 @@ const About = () => {
         <div className='AboutText'>
           <h1 className='AboutTextHeading' >Get to <b>know</b> me!</h1>
           <p>
-            Hi, my name is <b>Devansh Sahni</b> and I am from New Delhi, India.
-            I'm a <b>MERN stack web developer</b> and a final year college student pursuing <b>BTech in CSE</b>. <br/><br/>
-            I have done an internship as a <b>software developer</b> at GoalFi which is a fintech startup.
-            I love to create original projects with beautiful designs, you can check out some of my work in the projects section.<br/><br/>
-            I am <b>open</b> to new collaborations or work where I can contribute and grow. Feel free to connect with me, links are in the footer.<br/>
-            Apart from coding I love to do photography, you can check out some of my shots here <a href="https://www.instagram.com/devansh_sahni_/?hl=en" target='_blank'>Instagram.</a>
+            Hi, my name is <b>Chandima Ekanayake</b> and I am from Colombo, Sri Lanka.
+            I'm a Highly motivated and experienced software developer with a strong 
+            background in full-stack development and a passion for solving complex problems. 
+            With 4 years of academic experience and nearly 7 years of professional experience, 
+            I have a solid foundation in computer science principles and a track record of delivering high-quality software solutions on time. 
+            I am skilled in a variety of programming languages and technologies, including C#, TypeScript, JavaScript, and related frameworks, 
+            and I have experience working on both small and large-scale projects. I am a proactive team player who is always willing to take on new challenges and learn new skills.
           </p>
         </div>
 
         <div>
           <Tilt>
-              <Lottie 
-              className="illustration" 
-              animationData={Coder} 
-              loop={true} 
+            <Lottie
+              className="illustration"
+              animationData={Coder}
+              loop={true}
             />
           </Tilt>
         </div>
 
       </div>
-      
+
       <h1 className='SkillsHeading'>Professional Skillset</h1>
       <div className='skills'>
-        
+
         <Skills skill='React' />
         <Skills skill='Node' />
         <Skills skill='Express' />
@@ -47,8 +48,8 @@ const About = () => {
         <Skills skill='Figma' />
         <Skills skill='Vercel' />
         <Skills skill='Npm' />
-        <Skills skill='Bootstrap'/>
-        
+        <Skills skill='Bootstrap' />
+
       </div>
     </>
   )
