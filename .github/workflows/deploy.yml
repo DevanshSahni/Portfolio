@@ -1,0 +1,27 @@
+name: Deploy React App
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build React App
+        run: npm install && npm run build
+
+      - name: Deploy to Desklab
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H desklab.lk >> ~/.ssh/known_hosts
+          scp -r build/* chandimae@desklab.lk:/home/chandimae/public_html
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
