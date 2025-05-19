@@ -5,21 +5,20 @@ import {CgFileDocument} from "react-icons/cg";
 
 const  ProjectBox = ({projectPhoto, projectName}) => {
   const desc = {
-    TindogDesc : "This website is a landing page of Tinder but for dogs. It is a responsive website which was made to understand Bootstrap. I also learned how to host my project on Github and then how to deploy that project using Github pages.",
-    TindogGithub : "https://github.com/DevanshSahni/tindog",
-    TindogWebsite : "https://devanshsahni.github.io/tindog/",
+    EquationSolverDesc: "A GUI-based calculator that uses artificial neural networks to recognize and solve handwritten mathematical equations. Built with Python, TensorFlow, and Keras, this project demonstrates real-time digit and operator recognition for interactive problem-solving.",
+    EquationSolverGithub: "https://github.com/Sal03/Handwritten-Mathematical-Equation-Solver",
 
-    RogFreeDesc : "A website that shows you over seven specialized yoga postures for specific diseases or health problems. This was a group project made in a team of two for a 36-hour-long online hackathon named Hackodisha 2.0.",
-    RogFreeGithub : "https://github.com/DevanshSahni/Rog-Free",
-    RogFreeWebsite : "https://devanshsahni.github.io/Rog-Free/",
+    MediBuddyDesc: "A disease prediction system that uses Random Forest and SVM models to detect health issues like breast cancer and liver disease. Built using Python and integrated with Cassandra for data handling, it also features deep learning models (VGG19) for accurate malaria and pneumonia detection.",
+    MediBuddyGithub: "https://github.com/Sal03/Medibuddy-Smart-disease-predictor",
 
-    NewsletterDesc:"A newsletter signup site made using Mailchimp API where the signups can be monitored from the MailChimp account. This project was made to understand API integration, environment variables and vercel deployment.",
-    NewsletterGithub:"",
-    NewsletterWebsite:"https://newsletter-signup-teal.vercel.app/",
+    ChurnDashboardDesc: "An interactive dashboard for employee churn analysis built using Python, Pandas, and Matplotlib. It visualizes attrition trends, identifies key factors affecting churn, and helps HR teams make data-driven retention decisions.",
+    ChurnDashboardGithub: "https://github.com/Sal03/churn-dashboard",
     
-    WigglesDesc:"An innovative pet management web app enabling pet parents to create unique pet IDs, securely store and share vaccination records, and generate QR codes for pet profiles, enhancing safety.",
-    WigglesGithub:"https://github.com/DevanshSahni/Wiggles",
-    WigglesWebsite:"https://wiggles.vercel.app/",
+    BrainTumorDetectionDesc: "A deep learning-based application for detecting brain tumors from MRI scans. Built using Python, TensorFlow, and CNN architectures, it automates tumor classification and helps improve early diagnosis through medical image analysis.",
+    BrainTumorDetectionGithub: "https://github.com/Sal03/MRI-Brain-Tumor-Detection",
+
+    AlexaNLPDesc: "Just wrapped up an engaging voice + NLP project! I developed a customized Alexa Skill empowered by Hugging Face's zero-shot classification model, enabling the comprehension and categorization of natural language commands without strict phrases. The goal was to elevate Alexa's capabilities beyond simple keyword matching to truly grasp user intent.\n\nKey Components:\n- Created a Flask backend to handle Alexa requests\n- Integrated facebook/bart-large-mnli for zero-shot NLP capabilities\n- Transformed open-ended queries like “What offers are available today?” into actionable commands like ask_offer\n- Conducted thorough testing and deployed the solution live using ngrok + the Alexa Developer Console.\n\nAdditionally, I penned a comprehensive Medium article detailing the project’s intricacies, including challenges, tech stack, and insights gained. It's more than just a technical guide—it's a story of enhancing Alexa's intelligence through modern NLP.",
+    AlexaNLPGithub: "https://github.com/Sal03/Alexa-NLP-Zero-Shot",
   }
 
   let show ='';
