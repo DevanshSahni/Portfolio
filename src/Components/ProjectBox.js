@@ -15,7 +15,7 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
     
     PeertoPeerFrontendDesc:"This is a Peer-to-Peer Tutoring System frontend that allows students to connect with each other for tutoring sessions. It is built using React, Springboot, and MySql. The system allows students to create profiles, search for tutors, and schedule tutoring sessions. It is a full-stack application that I made to help students find tutors easily.",
     PeertoPeerFrontendGithub:"https://github.com/james-paul25/bisu-p2p-tutoring-system-frontend",
-    PeertoPeerFrontendWebsite : "",
+    PeertoPeerFrontendWebsite : "https://bisu-p2p-tutoring.vercel.app/",
 
     PeertoPeerBackendDesc:"This is a Peer-to-Peer Tutoring System backend that allows students to connect with each other for tutoring sessions. It is built using React, Springboot, and MySql. The system allows students to create profiles, search for tutors, and schedule tutoring sessions. It is a full-stack application that I made to help students find tutors easily.",
     PeertoPeerBackendGithub:"https://github.com/james-paul25/bisu-p2p-tutoring-system-frontend",
