@@ -49,6 +49,15 @@ const About = () => {
         <Skills skill='Npm' />
         <Skills skill='Bootstrap'/>
         
+        {/* Contribution */}
+        <h1 className='AboutText'>Education</h1>
+        <div className='Education'>
+          <div>
+            <h3>Bachelor of Technology in Computer Science</h3>
+            <p>Your University Name | 2021 - 2025</p>
+          </div>
+        </div>
+
       </div>
     </>
   )
