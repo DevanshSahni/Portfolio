@@ -1,3 +1,34 @@
+/* Update the top of your index.css with these variables */
+:root {
+  --bg-color: #031926;
+  --text-color: #E7E7E7;
+  --accent-color: #9067C6;
+  --secondary-bg: #431f47;
+  --navbar-blur: #01111a8d;
+}
+
+[data-theme='light'] {
+  --bg-color: #f0f0f0;
+  --text-color: #031926;
+  --accent-color: #6a4c93;
+  --secondary-bg: #d1b3d6;
+  --navbar-blur: #ffffff8d;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--bg-color); 
+  color: var(--text-color);           
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+b {
+  font-weight: 900;
+  color: var(--accent-color); 
+}
+
+
 *{
   margin: 0;
   padding: 0;
