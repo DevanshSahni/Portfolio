@@ -11,16 +11,14 @@ import Lottie from  "lottie-react";
 import nightsky from "./LottieFiles/night-sky.json";
 import HashLoader from "react-spinners/HashLoader";
 
-
 function App() {
   const[Loading,SetLoading]=useState(true);
 
   useEffect(()=>{
     SetLoading(true)
-
     setTimeout(()=>{
-    SetLoading(false)}
-    ,1900)
+      SetLoading(false)
+    }, 1900)
   },[])  
   
   return (
@@ -37,22 +35,26 @@ function App() {
       </div>
       ):(
       <div>
-      
-      <Lottie className="bg" animationData={nightsky} loop={true} />  
-      <Lottie className="bgtwo" animationData={nightsky} loop={true} />   
-      <Lottie className="bgtemp" animationData={nightsky} loop={true} /> 
+        {/* CONDITIONAL BLOCK */}
+        {document.body.getAttribute('data-theme') !== 'light' && (
+          <>
+            <Lottie className="bg" animationData={nightsky} loop={true} />  
+            <Lottie className="bgtwo" animationData={nightsky} loop={true} />   
+            <Lottie className="bgtemp" animationData={nightsky} loop={true} /> 
+          </>
+        )}
 
-      <Nav/>
-      <MoveToTop/>
+        <Nav/>
+        <MoveToTop/>
 
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/About" element={<About/>}/>
-        <Route path="/Project" element={<Project/>}/>
-        <Route path="/Resume" element={<Resume/>}/>
-      </Routes>
-      
-      <Footer/>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/About" element={<About/>}/>
+          <Route path="/Project" element={<Project/>}/>
+          <Route path="/Resume" element={<Resume/>}/>
+        </Routes>
+        
+        <Footer/>
       </div>
       )}  
     </>
